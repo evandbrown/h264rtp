@@ -2,11 +2,11 @@ package main
 
 import (
 	"bufio"
-	"github.com/evandbrown/gortp"
-	"github.com/evandbrown/rtp-receiver/payloads/h264"
 	"net"
 	"os"
 	"os/signal"
+	"h264rtp/payloads/h264"
+	"github.com/evandbrown/gortp"
 	"github.com/op/go-logging"
 )
 
