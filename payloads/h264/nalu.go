@@ -59,7 +59,7 @@ func (n *NALU) TS() uint32 {
 
 // Pretty print a NALU
 func (n *NALU) String() string {
-	return fmt.Sprintf("Forbidden: %v, NRI: %b, Type: %v, Seq: %v, TS: %v", n.Forbidden(), n.NRI(), n.NUT(), n.Seq(), n.TS())
+	return fmt.Sprintf("Forbidden: %v, NRI: %b, Type: %v, Seq: %v, TS: %v, Len: %v", n.Forbidden(), n.NRI(), n.NUT(), n.Seq(), n.TS(), len(n.Payload()))
 }
 
 // Single NALU == Base NALU
